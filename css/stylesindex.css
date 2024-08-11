@@ -1,0 +1,71 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+html {
+    background-image: url('https://i.pinimg.com/originals/f7/44/06/f744060231b6aaecd96b158c50b35a84.gif');
+    background-size: cover; 
+    background-position: center;
+}
+
+.container {
+    text-align: center;
+    position: relative;
+}
+
+.random-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 20px;
+    opacity: 0;
+    animation: fadeIn 3s forwards;
+    object-fit: cover;
+}
+
+.welcome-text {
+    font-size: 3em;
+    color: #ffffff;
+    opacity: 0;
+    animation: fadeInSlide 2s forwards 1s;
+}
+.welcome-text:hover {
+    cursor: default; 
+}
+
+.profile-link {
+    display: block;
+    font-size: 1.5em; 
+    color: #ffffff; 
+    text-decoration: none;
+    opacity: 0;
+    animation: fadeInSlide 2s forwards 2s;
+    margin-top: 20px;
+    padding: 10px 20px; 
+    border: 2px solid #0066cc; 
+    border-radius: 5px; 
+    background-color: #0066cc; 
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+.profile-link:hover {
+    background-color: #004d99; 
+    color: #ffffff; 
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInSlide {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}

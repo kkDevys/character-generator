@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu Perfil</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1>Crie Seu Personagem</h1>
+    <form id="profileForm" enctype="multipart/form-data">
+        <label for="name">Seu Nome:</label>
+        <input type="text" id="name" name="name"><br><br>
+        
+        <label for="age">Idade:</label>
+        <input type="number" id="age" name="age"><br><br>
+        
+        <label for="class">Classe:</label>
+        <input type="text" id="class" name="class">
+        <button type="button" id="randomClassButton">Escolher Classe Aleatória</button><br><br>
+        
+        <label for="bio">Biografia:</label>
+        <textarea id="bio" name="bio"></textarea>
+        <button type="button" id="randomBioButton">Gerar Biografia Aleatória</button><br><br>
+        
+        <label for="photo">Foto:</label>
+        <input type="file" id="photo" name="photo"><br><br>
+        
+        <button type="submit">Salvar</button>
+    </form>
+    
+    <div id="profileDisplay" style="display: none;">
+        <h2>Perfil</h2>
+        <p id="displayName"></p>
+        <p id="displayAge"></p>
+        <p id="displayClass"></p>
+        <p id="displayBio"></p>
+        <img id="displayPhoto" src="" alt="Foto do Perfil">
+        <h3>Status do Personagem</h3>
+        <p id="displayForca"></p>
+        <p id="displayDefesa"></p>
+        <p id="displayInteligencia"></p>
+        <p id="displayVigor"></p>
+        <p id="displaySorte"></p>
+        <p id="displayFe"></p>
+        <h3>História do Personagem</h3>
+        <p id="characterStory"></p>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
